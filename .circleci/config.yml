@@ -13,6 +13,7 @@ jobs:
       - run:
           name: Make Docs
           command: |
+            sudo apt-get install build-essential
             cd docs && make html
       - run: 
           name: Deploy Docs
